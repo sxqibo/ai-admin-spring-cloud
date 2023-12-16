@@ -10,39 +10,42 @@
 	</parent>
 
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.example</groupId>
+	<groupId>com.sxqibo</groupId>
 	<artifactId>ai-admin-spring-cloud</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>ai-admin-spring-cloud</name>
 	<description>ai-admin-spring-cloud</description>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>manage-hello</module>
+		<module>manage-orders</module>
+	</modules>
 
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
 
-	<dependencyManagement>
-		<dependencies>
-			<!--Springclouud 项目依赖-->
-			<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-dependencies -->
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>2022.0.0</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
+	<dependencies>
+		<!--Springcloud 项目依赖-->
+		<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-dependencies -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-dependencies</artifactId>
+			<version>2022.0.0</version>
+			<type>pom</type>
+			<scope>import</scope>
+		</dependency>
 
+		<!--Springcloud alibaba 项目依赖-->
+		<!-- https://mvnrepository.com/artifact/com.alibaba.cloud/spring-cloud-alibaba -->
+		<dependency>
+			<groupId>com.alibaba.cloud</groupId>
+			<artifactId>spring-cloud-alibaba</artifactId>
+			<version>2021.0.1.0</version>
+			<type>pom</type>
+		</dependency>
 
-			<!--Springclouud alibaba 项目依赖-->
-			<!-- https://mvnrepository.com/artifact/com.alibaba.cloud/spring-cloud-alibaba -->
-			<dependency>
-				<groupId>com.alibaba.cloud</groupId>
-				<artifactId>spring-cloud-alibaba</artifactId>
-				<version>2021.0.1.0</version>
-				<type>pom</type>
-			</dependency>
-
-		</dependencies>
-	</dependencyManagement>
+	</dependencies>
 
 </project>
