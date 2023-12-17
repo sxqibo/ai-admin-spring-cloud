@@ -18,8 +18,9 @@
 	<packaging>pom</packaging>
 
 	<modules>
-		<module>manage-hello</module>
+		<module>manage-helloworld</module>
 		<module>manage-orders</module>
+		<module>manage-store</module>
 	</modules>
 
 	<properties>
