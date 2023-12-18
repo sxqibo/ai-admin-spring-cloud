@@ -18,6 +18,7 @@
 	<packaging>pom</packaging>
 
 	<modules>
+		<module>manage-config</module>
 		<module>manage-helloworld</module>
 		<module>manage-orders</module>
 		<module>manage-store</module>
