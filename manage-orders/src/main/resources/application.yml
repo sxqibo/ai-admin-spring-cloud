@@ -11,4 +11,4 @@ spring.cloud.nacos.discovery.server-addr: 8.141.49.217:8848
 # management.endpoints.web.exposure.include: *
 
 # 如果不开启不生效
-feign.hystrix.enabled: true
+feign.circuitbreaker.enabled: true

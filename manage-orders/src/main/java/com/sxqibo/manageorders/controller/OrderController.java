@@ -11,16 +11,14 @@ import com.sxqibo.manageorders.client.StoreClient;
 @RestController
 public class OrderController {
 
-    private final LoadBalancerClient loadBalancerClient;
-    private final RestTemplate restTemplate;
-    private final StoreClient storeClient;
+    @Autowired
+    LoadBalancerClient loadBalancerClient;
 
     @Autowired
-    public OrderController(LoadBalancerClient loadBalancerClient, RestTemplate restTemplate, StoreClient storeClient) {
-        this.loadBalancerClient = loadBalancerClient;
-        this.restTemplate = restTemplate;
-        this.storeClient = storeClient;
-    }
+    RestTemplate restTemplate;
+
+    @Autowired
+    StoreClient storeClient;
 
     @RequestMapping("/order/template")
     public String orderApi() {
