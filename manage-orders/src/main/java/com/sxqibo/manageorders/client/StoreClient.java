@@ -4,7 +4,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 // 注解内填上 库存微服务的名字 ServiceID
-@FeignClient("nacos-store")
+@FeignClient(value = "nacos-store", fallback = StoreClientFallback.class)
 public interface StoreClient {
 
     // 库存接口的地址
