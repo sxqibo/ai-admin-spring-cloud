@@ -2,17 +2,17 @@
 spring.application.name: nacos-store
 
 # 重要配置 配置 Nacos Server 注册中心的地址 IP:PORT
-spring.cloud.nacos.discovery.server-addr: 8.141.49.217:8848
+spring.cloud.nacos.discovery.server-addr: 127.0.0.1:8848
 
 ---
 # SpringBoot Web 项目端口
 spring.profiles: dev1
-server.port: 8083
+server.port: 8073
 
 ---
 # SpringBoot Web 项目端口
 spring.profiles: dev2
-server.port: 8084
+server.port: 8074
 
 # 打开所有的端点
 # management.endpoints.web.exposure.include: *

@@ -10,13 +10,6 @@
     </parent>
 
     <artifactId>manage-config</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>manage-config</name>
-    <description>manage-config</description>
-    <properties>
-        <java.version>1.8</java.version>
-    </properties>
-
 
     <dependencies>
         <!-- Spring Boot Starter web 依赖 -->
@@ -34,6 +27,13 @@
             <version>2021.0.1.0</version>
         </dependency>
 
-    </dependencies>
+        <!-- bootstrap引导程序-->
+        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-bootstrap -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bootstrap</artifactId>
+            <version>3.0.2</version>
+        </dependency>
 
+    </dependencies>
 </project>

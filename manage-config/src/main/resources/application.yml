@@ -1,3 +1,0 @@
-spring.application.name: nacos-config
-spring.cloud.nacos.config.server-addr: 8.141.49.217:8848
-spring.cloud.nacos.config.file-extension: yaml
